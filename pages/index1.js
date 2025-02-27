@@ -34,18 +34,7 @@ import { FaHome, FaSearch, FaTv, FaPlay, FaBars } from "react-icons/fa";
 export default function Home() {
   const router = useRouter();
 
-  useEffect(() => {
-    const handleBack = () => {
-      if (document.referrer.includes("/verification-success")) {
-        router.replace("/"); // Skip verification-success and go directly to "/"
-      } else {
-        router.back(); // Normal back behavior for other pages
-      }
-    };
-
-    window.addEventListener("popstate", handleBack);
-    return () => window.removeEventListener("popstate", handleBack);
-  }, [router]);
+  
 
   
   useEffect(() => {
