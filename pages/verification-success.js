@@ -27,7 +27,7 @@ export default function VerificationSuccess() {
       <div className="success-container">
         <h1>✅ Verification Successful!</h1>
         <p>Your token is now valid. You can access the content.</p>
-        //<div className="loader0"></div>
+        {/*<div className="loader0"></div>*/}
         <p>Click the button below to Restart the app.</p>
 
         {/* Exit Button */}
